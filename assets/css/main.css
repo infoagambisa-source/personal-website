@@ -4038,3 +4038,119 @@ section,
 .footer {
   border-top: 1px solid #e2e8f0;
 }
+
+
+/*--------------------------------------------------------------
+# Phase 1: Design & UX Polish
+--------------------------------------------------------------*/
+
+/* Typography consistency */
+body {
+  line-height: 1.7;
+}
+
+p {
+  color: color-mix(in srgb, var(--default-color), transparent 8%);
+}
+
+.section-title h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.section-title p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Softer section spacing */
+section,
+.section {
+  padding: 90px 0;
+}
+
+/* Navigation polish */
+.header {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.header .logo h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.navmenu a,
+.navmenu a:focus {
+  font-weight: 600;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
+  color: var(--accent-color);
+}
+
+/* Card consistency */
+.portfolio-card,
+.service-item,
+.education-card,
+.contact-card,
+.expertise-highlight,
+.tech-item {
+  background: var(--surface-color);
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+/* Project card spacing */
+.portfolio .portfolio-card {
+  padding: 22px;
+}
+
+.portfolio .portfolio-image {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-title {
+  font-weight: 600;
+}
+
+/* Button consistency */
+.btn-primary,
+.btn-secondary,
+.btn-custom,
+.btn-outline-primary {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Badge consistency */
+.skill-badge,
+.portfolio-tech span,
+.service-tags span,
+.achievement-tag {
+  border-radius: 999px;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  section,
+  .section {
+    padding: 70px 0;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .section-title {
+    padding-bottom: 40px;
+  }
+}
