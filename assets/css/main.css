@@ -4154,3 +4154,13 @@ section,
     padding-bottom: 40px;
   }
 }
+
+.demo-status {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.demo-status strong {
+  color: var(--heading-color);
+}
