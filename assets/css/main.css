@@ -4235,3 +4235,49 @@ section,
   font-weight: 600;
   color: var(--heading-color);
 }
+.tech-category {
+  margin-bottom: 48px;
+}
+
+.tech-category h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 22px;
+}
+
+.tech-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 22px;
+}
+
+.tech-logo-card {
+  background: var(--surface-color);
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px 18px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+  transition: 0.3s ease;
+}
+
+.tech-logo-card:hover {
+  transform: translateY(-4px);
+}
+
+.tech-logo-card img,
+.tech-logo-card i {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  font-size: 52px;
+  color: var(--accent-color);
+}
+
+.tech-logo-card span {
+  display: block;
+  font-weight: 600;
+  color: var(--heading-color);
+}
