@@ -4304,3 +4304,26 @@ section,
   border-radius: 999px;
   font-weight: 600;
 }
+
+@media (max-width: 1199px) {
+  body.mobile-nav-active .header .navmenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 72px;
+    left: 15px;
+    right: 15px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.12);
+    z-index: 9999;
+  }
+
+  body.mobile-nav-active .header .navmenu a {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
